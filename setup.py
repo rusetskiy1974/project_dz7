@@ -6,7 +6,7 @@ with open('README.md', 'r', encoding = 'utf-8') as fh:
 if __name__ == '__main__':
     setup(
     name='clean_folder_RSA',
-    version='0.0.4',
+    version='0.1.19',
     description='Home work 7 . Clean folder script',
     long_description = long_description,
     long_description_content_type='text/markdown',
@@ -18,8 +18,8 @@ if __name__ == '__main__':
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent"],
     packages=find_namespace_packages(),
+    py_modules=['tools'],
     # package_dir={'':'src'},
     # include_package_data=True,
     entry_points={'console_scripts': ['clean-folder=src.clean_folder_RSA.clean:start']}
 )
-    
